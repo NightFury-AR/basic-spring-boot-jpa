@@ -12,6 +12,9 @@ public class StudentController {
     private StudentService studentService;
 
     @Autowired
+    private ServiceGeneric<StudentRepository,Student> studentService1;
+
+    @Autowired
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
